@@ -4,8 +4,8 @@ from django.db import models
 
 class AboutModel(models.Model):
     sub_title=models.CharField(max_length=250)
-    start_date=models.DateField()
-    end_date=models.DateField()
+    start_date=models.CharField(max_length=250, blank=True)
+    end_date=models.CharField(max_length=250, blank=True)
     title=models.CharField(max_length=250)
     description=models.TextField()
 
