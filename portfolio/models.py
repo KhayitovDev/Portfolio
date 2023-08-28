@@ -13,8 +13,8 @@ class AboutModel(models.Model):
         return self.sub_title
     
 class ProjectModel(models.Model):
-    image=models.ImageField(upload_to='static/images/')
-    file=models.FileField(upload_to='static/videos/')
+    image=models.ImageField(upload_to='images/')
+    file=models.FileField(upload_to='videos/')
     title=models.CharField(max_length=250)
     description=models.TextField()
 
