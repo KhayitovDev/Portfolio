@@ -17,6 +17,7 @@ class ProjectModel(models.Model):
     file=models.FileField(upload_to='videos/')
     title=models.CharField(max_length=250)
     description=models.TextField()
+    url_to_project=models.URLField()
 
     def __str__(self):
         return self.title
